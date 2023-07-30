@@ -53,6 +53,9 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemGray6Color"/>
                                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="addingRedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Y7c-aD-m0b"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -90,6 +93,9 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemGray6Color"/>
                                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="addingGreenColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Bp9-C9-8OX"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <constraints>
@@ -130,6 +136,9 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemGray6Color"/>
                                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="addingBlueColor" destination="BYZ-38-t0r" eventType="valueChanged" id="r71-OC-O8j"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -158,7 +167,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueSlider" destination="jwC-vO-c5J" id="U4a-dE-fBy"/>
+                        <outlet property="blueValue" destination="ott-Ts-eBL" id="Msr-D7-Ub5"/>
                         <outlet property="colorToneDisplay" destination="mUE-Uh-t4U" id="h36-fb-tx1"/>
+                        <outlet property="greenSlider" destination="O2l-56-1Ys" id="0aZ-VB-XiZ"/>
+                        <outlet property="greenValue" destination="j06-yU-0dQ" id="FD7-7x-eJF"/>
+                        <outlet property="redSlider" destination="fSA-pw-cft" id="BbX-dr-jXr"/>
+                        <outlet property="redValue" destination="hqc-Pi-ftS" id="OqN-5w-i9w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
