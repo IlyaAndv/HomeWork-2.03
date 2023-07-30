@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-8x-B3p">
                                 <rect key="frame" x="16" y="738" width="398" height="120"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-v3-Nh2">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-v3-Nh2" userLabel="Red Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-WC-fZg">
@@ -59,7 +59,7 @@
                                             </slider>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-oK-RlI">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-oK-RlI" userLabel="Green Stack View">
                                         <rect key="frame" x="1" y="45" width="397" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bAe-oS-EGi">
@@ -102,7 +102,7 @@
                                             <constraint firstItem="bAe-oS-EGi" firstAttribute="leading" secondItem="4pY-oK-RlI" secondAttribute="leading" id="4aq-Vm-43P"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="f4q-5O-xXF">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="f4q-5O-xXF" userLabel="Blue Stack View">
                                         <rect key="frame" x="1" y="90" width="397" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7BZ-fC-L3B">
@@ -169,7 +169,7 @@
                     <connections>
                         <outlet property="blueSlider" destination="jwC-vO-c5J" id="U4a-dE-fBy"/>
                         <outlet property="blueValue" destination="ott-Ts-eBL" id="Msr-D7-Ub5"/>
-                        <outlet property="colorToneDisplay" destination="mUE-Uh-t4U" id="h36-fb-tx1"/>
+                        <outlet property="displayScreen" destination="mUE-Uh-t4U" id="h36-fb-tx1"/>
                         <outlet property="greenSlider" destination="O2l-56-1Ys" id="0aZ-VB-XiZ"/>
                         <outlet property="greenValue" destination="j06-yU-0dQ" id="FD7-7x-eJF"/>
                         <outlet property="redSlider" destination="fSA-pw-cft" id="BbX-dr-jXr"/>

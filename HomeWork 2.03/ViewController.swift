@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var colorToneDisplay: UIView!
+    @IBOutlet var displayScreen: UIView!
     
     @IBOutlet var redValue: UILabel!
     @IBOutlet var greenValue: UILabel!
@@ -23,21 +23,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorToneDisplay.layer.cornerRadius = 27
+        displayScreen.layer.cornerRadius = 27
     }
     
     @IBAction func addingRedColor() {
-        colorize(colorToneDisplay)
+        colorize(displayScreen)
         redValue.text = String(format: "%.2f", redSlider.value)
     }
     
     @IBAction func addingGreenColor() {
-        colorize(colorToneDisplay)
+        colorize(displayScreen)
         greenValue.text = String(format: "%.2f", greenSlider.value)
     }
     
     @IBAction func addingBlueColor() {
-        colorize(colorToneDisplay)
+        colorize(displayScreen)
         blueValue.text = String(format: "%.2f", blueSlider.value)
     }
     
