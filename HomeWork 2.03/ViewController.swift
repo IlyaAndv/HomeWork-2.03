@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     @IBOutlet var displayScreen: UIView!
     
@@ -11,15 +11,6 @@ class ViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
-    
-    private func colorize(_ display: UIView) {
-        display.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value),
-            green: CGFloat(greenSlider.value),
-            blue: CGFloat(blueSlider.value),
-            alpha: 1.0
-        )
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +30,15 @@ class ViewController: UIViewController {
     @IBAction func addingBlueColor() {
         colorize(displayScreen)
         blueValue.text = String(format: "%.2f", blueSlider.value)
+    }
+    
+    private func colorize(_ display: UIView) {
+        display.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1.0
+        )
     }
     
 }
